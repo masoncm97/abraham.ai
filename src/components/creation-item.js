@@ -3,18 +3,20 @@ import Image from "next/image";
 import styles from "@/styles/creation-item.module.scss";
 
 export default function CreationtItem({ creation }) {
-  console.log(creation.name, creation.uri);
   return (
-    <div className={styles.event}>
+    <div className={styles.container}>
       <div className={styles.img}>
         {creation.uri && (
           <Image
             src={creation.uri}
-            width={170}
-            height={100}
+            width={300}
+            height={300}
             alt={creation.name || "Creation"}
           />
         )}
+      </div>
+      <div className={styles.description}>
+          {creation.name}
       </div>
     </div>
   );

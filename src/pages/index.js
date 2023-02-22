@@ -6,24 +6,24 @@ let filter = {
   username: "0x2823d234473815D34B734E87b6FCbed4d783B3Dc",
   limit: 50,
 };
-export default function Home({json}) {
-    const creations = JSON.parse(json);
-    console.log(creations)
-    return (
-      <Layout>
-        {creations.length === 0 && <h3>No events to show</h3>}
-        {creations.map((creation) => (
-          <CreationItem key={creation._id} creation={creation} />
-        ))}
-        <p>Lit</p>
-      </Layout>
-    );
+export default function Home({filteredJson}) {
+  const creations = JSON.parse(filteredJson);
+  console.log(creations)
+  return (
+    <Layout>
+      {creations.length === 0 && <h3>No creations to show</h3>}
+      {creations.map((creation) => (
+        <CreationItem key={creation._id} creation={creation} />
+      ))}
+    </Layout>
+  );
 }
 
 export async function getServerSideProps() {
   let eden = new EdenClient();
   let result = await eden.getCreations(filter);
-  console.log(result);
-  let json = JSON.stringify(result);
-  return { props: { json } };
+  const filteredJson = JSON.stringify(
+    result.filter((creation) => /\.(jpg|png)$/.test(creation.uri))
+  );
+  return { props: { filteredJson } };
 }
