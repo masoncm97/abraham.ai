@@ -1,0 +1,50 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 30px 50px;
+  }
+  
+  .header a {
+    color: #333;
+    margin-right: 20px;
+  }
+  
+  .header a:hover {
+    color: #000;
+  }
+  .header ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  .logo {
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .header ul {
+      margin: 20px 0;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .header a {
+      margin-right: 0;
+    }
+  
+    .logo {
+      margin: 20px 0;
+    }
+  }
+  
