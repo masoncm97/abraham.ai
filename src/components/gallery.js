@@ -1,4 +1,4 @@
-import styles from '@/styles/Gallery.module.css'
+import styles from '@/styles/Gallery.module.scss'
 // import getCreations from '../pages/api/eden-handler'
 
 let filter = {

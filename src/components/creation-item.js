@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import styles from "@/styles/creation-item.module.css";
+import styles from "@/styles/creation-item.module.scss";
 
 export default function CreationtItem({ creation }) {
   console.log(creation.name, creation.uri);

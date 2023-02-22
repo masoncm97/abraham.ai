@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import {useRouter} from 'next/router'
-import styles from '@/styles/layout.module.css'
+import styles from '@/styles/layout.module.scss'
 import Header from './header'
 
 export default function Layout({title, keywords, description, children}) {
