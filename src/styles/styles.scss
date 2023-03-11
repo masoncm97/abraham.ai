@@ -1,0 +1,48 @@
+// Global Styles
+
+*,
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  
+  body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  a:link, a:visited {
+    color: #38488f;
+    text-decoration: none;
+  }
+  
+  button, input[type="submit"], input[type="reset"] {
+      background: none;
+      color: inherit;
+      border: none;
+      padding: 0;
+      font: inherit;
+      cursor: pointer;
+      outline: inherit;
+  }
+  
+  @media (max-width: 700px) {
+    body {
+        background-color: #fff;
+    }
+    div {
+        width: auto;
+        margin: 0 auto;
+        border-radius: 0;
+        padding: 1em;
+    }
+  }

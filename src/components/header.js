@@ -5,8 +5,8 @@ import { ConnectButton } from "@rainbow-me/rainbowkit";
 export default function Header() {
   return (
     <header className={styles.header}>
-      <div className={styles.logo}>
-        <Link href="/">
+      <div className={styles.logoContainer}>
+        <Link className={styles.logo}href="/">
           <p>Abraham</p>
         </Link>
       </div>

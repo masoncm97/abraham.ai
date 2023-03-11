@@ -9,7 +9,6 @@ let filter = {
 
 export default function Home({ filteredJson }) {
   const creations = JSON.parse(filteredJson);
-  console.log(creations);
   return (
     <Layout>
       {creations.length === 0 && <h3>No creations to show</h3>}
