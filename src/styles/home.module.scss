@@ -1,0 +1,9 @@
+.homeContainer {
+    margin: 60px auto;
+    max-width: 960px;
+    padding: 0 30px;
+
+    display: grid;
+    grid-template-columns: 50vw 1fr;
+    grid-template-rows: 10rem calc(100vh - 10rem);
+}
