@@ -4,7 +4,7 @@ import styles from "@/styles/creation-item.module.scss";
 
 export default function CreationtItem({ creation }) {
   return (
-    <div className={styles.container}>
+    <div className={styles.creationItem_container}>
       <div className={styles.reaction_container}>
         <button className={styles.reaction_btn}>
           👏

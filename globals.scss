@@ -10,3 +10,9 @@ $bp-small: 37.5em;
 // FONT VARIABLES
 $font-primary: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-display: 'Outfit', sans-serif;
+
+// MIXINS
+@mixin defaultContainer {
+    border-radius: 25px;
+    border: 1px solid #000;
+  }

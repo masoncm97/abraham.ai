@@ -1,0 +1,24 @@
+.panel_container {
+    @include defaultContainer;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2.5rem;
+  align-content: center;
+}
+
+.item_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+
+.btn {
+    font-size: 3rem;
+}
+
+.label {
+    font-size: 2.3rem;
+}
+

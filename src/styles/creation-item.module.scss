@@ -1,11 +1,10 @@
-.container {
+.creationItem_container {
+  @include defaultContainer;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 20px 0;
   padding: 13px;
-  border-radius: 25px;
-  border: 1px solid #000;
 }
 
 .img {
