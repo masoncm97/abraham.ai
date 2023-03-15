@@ -9,7 +9,7 @@ let filter = {
 
 export default function CreationsFeed({ creations }) {
   const router = useRouter();
-  
+
   return (
     <div className={styles.creationsFeed}>
       {creations == undefined && <h3>No creations to show</h3>}
@@ -20,11 +20,4 @@ export default function CreationsFeed({ creations }) {
   );
 }
 
-// export async function getServerSideProps() {
-//     let eden = new EdenClient();
-//     let result = await eden.getCreations(filter);
-//     const filteredJson = JSON.stringify(
-//       result.filter((creation) => /\.(jpg|png)$/.test(creation.uri))
-//     );
-//     return { props: { filteredJson } };
-//   }
+
