@@ -1,6 +1,6 @@
 import { EdenClient } from "eden-sdk";
 import Layout from "@/components/layout";
-import Home from "@/components/home";
+import Home from "./home";
 let filter = {
   username: "0x2823d234473815D34B734E87b6FCbed4d783B3Dc",
   limit: 50,

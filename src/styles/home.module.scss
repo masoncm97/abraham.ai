@@ -6,4 +6,5 @@
     grid-template-columns: 50vw minmax(3rem, 1fr);
     grid-template-rows: 10rem calc(100vh - 10rem);
     grid-column-gap: 8rem;
+    position: relative;
 }

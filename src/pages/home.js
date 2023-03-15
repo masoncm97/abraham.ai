@@ -1,9 +1,9 @@
-import Head from "next/head";
 import { useRouter } from "next/router";
 import styles from "@/styles/home.module.scss";
-import FilterPanel from "./filter-panel";
+import FilterPanel from "@/components/filter-panel";
 import CreationsFeed from "./creations-feed";
 import About from "./about";
+import Chat from "./chat";
 
 export default function Home({ creations }) {
   const router = useRouter();
@@ -15,6 +15,7 @@ export default function Home({ creations }) {
       <FilterPanel />
       <CreationsFeed className={styles.creationsFeedContainer} creations={creations}/>
       <About />
+      <Chat />
     </div>
   );
 }
