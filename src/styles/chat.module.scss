@@ -1,22 +1,34 @@
-.panel_container {
+.container {
     @include defaultContainer;
     min-width: 4rem;
     position: fixed;
     bottom: 0;
     right: 10rem;
-    min-height: 30rem;
     margin-top: -100px;
+    padding-top: 30px;
     border: 1px solid black;
     transform: translateY(2.5rem);
-
+    background-color: white;
     display: grid;
     align-items: end;
+    max-width: 30rem;
 }
 
-.panel {
-    min-width: 4rem;    
-    position: relative;
+.header {
+    font-family: $font-display;
+    font-size: large;
+    padding-left: 2rem;
 }
+
+.chatWindow {
+    height: 30rem;
+    width: 25rem;
+    overflow-y: auto;
+}
+
+.chatWindow::-webkit-scrollbar {
+    display: none;
+  }
 
 .form {
     margin-bottom: 2.5rem;

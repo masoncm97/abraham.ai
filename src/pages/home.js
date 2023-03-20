@@ -9,11 +9,11 @@ export default function Home({ creations }) {
   const router = useRouter();
 
   return (
-    <div className={styles.homeContainer}>
+    <div className={styles.container}>
       {router.pathname === "/"}
       {creations == undefined && <h3>No creations to show</h3>}
       <FilterPanel />
-      <CreationsFeed className={styles.creationsFeedContainer} creations={creations}/>
+      <CreationsFeed creations={creations}/>
       <About />
       <Chat />
     </div>

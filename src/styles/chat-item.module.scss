@@ -1,0 +1,20 @@
+.container {
+    @include defaultContainer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 13px;
+    max-width: 30rem;
+}
+
+.received {
+    background-color: white;
+    border: 1px solid black;
+}
+
+.sent {
+    background-color: deepskyblue;
+    border: 1px solid white;
+    color: white;
+}

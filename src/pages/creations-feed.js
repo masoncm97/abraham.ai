@@ -11,7 +11,7 @@ export default function CreationsFeed({ creations }) {
   const router = useRouter();
 
   return (
-    <div className={styles.creationsFeed}>
+    <div className={styles.container}>
       {creations == undefined && <h3>No creations to show</h3>}
       {creations?.map((creation) => (
         <CreationItem key={creation._id} creation={creation} />
