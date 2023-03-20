@@ -3,18 +3,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 0;
-    padding: 13px;
+    margin: 2rem .3rem;
+    padding: 1.3rem;
     max-width: 30rem;
+    width: fit-content;
 }
 
 .received {
     background-color: white;
     border: 1px solid black;
+    align-items: right;
+    justify-content: flex-start;
+    align-self: flex-start;
 }
 
 .sent {
     background-color: deepskyblue;
     border: 1px solid white;
     color: white;
+    justify-content: flex-end;
+    align-self: flex-end;
 }

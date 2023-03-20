@@ -45,9 +45,9 @@ export default function Chat() {
       </div>
       <form className={styles.form} onSubmit={handleSubmit}>
         <div className="Field">
-          <label>Input:</label>
           <textarea
             value={input}
+            className={styles.textArea}
             onChange={(e) => setInput(e.target.value)}
           ></textarea>
         </div>
