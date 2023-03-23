@@ -1,8 +1,8 @@
-import { EdenClient } from "eden-sdk";
-import Layout from "@/components/layout";
-import Home from "./home";
+import { EdenClient } from 'eden-sdk';
+import Layout from '@/components/layout';
+import Home from './home';
 let filter = {
-  username: "0x267f327125903F6D562315A2c8a2e6c2Dc60C068",
+  username: '0x267f327125903F6D562315A2c8a2e6c2Dc60C068',
   limit: 50,
 };
 
@@ -10,7 +10,7 @@ export default function Abraham({ filteredJson }) {
   const creations = JSON.parse(filteredJson);
   return (
     <Layout>
-      <Home creations={creations}/>
+      <Home creations={creations} />
     </Layout>
   );
 }

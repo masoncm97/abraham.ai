@@ -1,0 +1,10 @@
+.container {
+  @include defaultContainer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0.3rem;
+  padding: 1.3rem;
+  max-width: 30rem;
+  width: fit-content;
+}

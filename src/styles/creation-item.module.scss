@@ -10,7 +10,6 @@
 .img {
   flex: 1;
   margin: 10px;
-
 }
 
 .description {
@@ -30,6 +29,11 @@
 .reaction_btn {
   width: 6rem;
   font-size: 4rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.reaction_btn:hover {
+  transform: scale(1.15);
 }
 
 @media (max-width: 600px) {
